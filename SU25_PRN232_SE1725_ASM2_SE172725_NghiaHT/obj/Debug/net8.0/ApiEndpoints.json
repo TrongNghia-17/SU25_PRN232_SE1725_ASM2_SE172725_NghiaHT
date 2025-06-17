@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT.WeatherForecast, SMMS.GraphQLAPIServices.NghiaHT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT/1.0.0": {
+        "runtime": {
+          "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT_HostAddress = http://localhost:5011
+
+GET {{SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
