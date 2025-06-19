@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLAPIServices.NghiaHT.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

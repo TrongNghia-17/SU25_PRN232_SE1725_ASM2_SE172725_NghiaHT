@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMMS.Repositories.NghiaHT",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMMS.Services.NghiaHT", "SMMS.Services.NghiaHT\SMMS.Services.NghiaHT.csproj", "{601C213A-BAA2-470F-A6A6-6017B356692F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMMS.GraphQLClients.BlazorWAS.NghiaHT", "SMMS.GraphQLClients.BlazorWAS.NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj", "{3F96390B-C511-492B-AD7F-DF230C22E203}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{601C213A-BAA2-470F-A6A6-6017B356692F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{601C213A-BAA2-470F-A6A6-6017B356692F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{601C213A-BAA2-470F-A6A6-6017B356692F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F96390B-C511-492B-AD7F-DF230C22E203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F96390B-C511-492B-AD7F-DF230C22E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F96390B-C511-492B-AD7F-DF230C22E203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F96390B-C511-492B-AD7F-DF230C22E203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

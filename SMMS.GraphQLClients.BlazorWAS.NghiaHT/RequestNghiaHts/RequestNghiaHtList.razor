@@ -1,0 +1,73 @@
+﻿@page "/RequestNghiaHts/RequestNghiaHtList"
+
+@using SMMS.GraphQLClients.BlazorWAS.NghiaHT.Models
+
+@if (requestNghiaHt == null)
+{
+    <div>Page loading...</div>
+}
+else
+{
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th>MedicationName</th>
+                <th>Dosage</th>
+                <th>Frequency</th>
+                <th>Reason</th>
+                <th>Instruction</th>
+                <th>Quantity</th>
+                <th>CreatedDate</th>
+                <th>StartDate</th>
+                <th>IsApproved</th>
+                <th>CategoryName</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="table-primary">
+            @foreach (var requestNghiaHt in requestNghiaHt)
+            {
+                <tr>
+                    <td>@requestNghiaHt.MedicationName</td>
+                    <td>@requestNghiaHt.Dosage</td>
+                    <td>@requestNghiaHt.Frequency</td>
+                    <td>@requestNghiaHt.Reason</td>
+                    <td>@requestNghiaHt.Instruction</td>
+                    <td>@requestNghiaHt.Quantity</td>
+                    <td>@requestNghiaHt.CreatedDate</td>
+                    <td>@requestNghiaHt.StartDate</td>
+                    <td>@requestNghiaHt.IsApproved</td>
+                    <td>@requestNghiaHt.MedicationCategoryQuanTn.CategoryName</td>                    
+                    
+                    @* <td class="text-center fw-bold text-success">@cashDepositSlip.AccountNoNavigation.BankNo</td>
+                    <td class="text-center fw-bold text-primary">@cashDepositSlip.CurrencyCode</td>
+                    <td class="text-end fw-bold text-danger">@cashDepositSlip.AmountInFigures.ToString("#,###")</td> *@
+                    
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a href="#" class="btn btn-sm btn-primary">Detail</a>
+                            <a href="#" class="btn btn-sm btn-warning">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<RequestNghiaHt> requestNghiaHt;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // await Task.Delay(2000);
+
+        try
+        {
+            requestNghiaHt = await _graphQLConsumer.GetRequestNghiaHts();
+        }
+        catch (Exception ex)
+        {
+        }
+    }
+}

@@ -1,4 +1,5 @@
-﻿using SMMS.Repositories.NghiaHT.Models;
+﻿using SMMS.Repositories.NghiaHT.ModelExtensions;
+using SMMS.Repositories.NghiaHT.Models;
 using SMMS.Services.NghiaHT;
 
 namespace SMMS.GraphQLAPIServices.NghiaHT.GraphQLs;
@@ -32,5 +33,20 @@ public class Queries
         {
             return new RequestNghiaHt();
         }
+    }
+
+    public async Task<PaginationResult<List<RequestNghiaHt>>> SearchWithPagingAsync(SearchRequestNghiaHt request)
+    {
+        try
+        {
+            var result = await _serviceProvider.RequestNghiaHtService.SearchWithPagingAsync(request);
+
+            return result ?? new PaginationResult<List<RequestNghiaHt>>();
+        }
+        catch (Exception ex)
+        {
+        }
+
+        return new PaginationResult<List<RequestNghiaHt>>();
     }
 }
