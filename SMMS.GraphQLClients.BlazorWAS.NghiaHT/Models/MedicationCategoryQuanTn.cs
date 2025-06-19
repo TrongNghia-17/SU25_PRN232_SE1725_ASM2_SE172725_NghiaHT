@@ -19,3 +19,8 @@ public partial class MedicationCategoryQuanTn
 
     public virtual ICollection<RequestNghiaHt> RequestNghiaHts { get; set; } = new List<RequestNghiaHt>();
 }
+
+public partial class MedicationCategoriesGraphQLResponse
+{
+    public List<MedicationCategoryQuanTn> medicationCategoryQuanTns { get; set; }
+}

@@ -1,21 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="GraphQL" Version="8.5.0" />
-    <PackageReference Include="GraphQL.Client" Version="6.1.0" />
-    <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="6.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.16" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.16" PrivateAssets="all" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="GraphQL" Version="8.5.0" />
+		<PackageReference Include="GraphQL.Client" Version="6.1.0" />
+		<PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="6.1.0" />
+		<PackageReference Include="HotChocolate.Abstractions" Version="15.1.6" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.16" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.16" PrivateAssets="all" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SMMS.Repositories.NghiaHT\SMMS.Repositories.NghiaHT.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\SMMS.Repositories.NghiaHT\SMMS.Repositories.NghiaHT.csproj" />
+	</ItemGroup>
 
 </Project>

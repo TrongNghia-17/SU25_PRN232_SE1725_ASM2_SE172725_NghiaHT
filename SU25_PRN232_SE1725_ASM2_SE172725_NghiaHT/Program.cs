@@ -1,4 +1,5 @@
 ﻿using SMMS.GraphQLAPIServices.NghiaHT.GraphQLs;
+using SMMS.Repositories.NghiaHT.Models;
 using SMMS.Services.NghiaHT;
 using System.Text.Json.Serialization;
 

@@ -3,12 +3,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-
+using HotChocolate;
 namespace SMMS.GraphQLClients.BlazorWAS.NghiaHT.Models;
 
 
 public partial class RequestNghiaHt
 {
+    [GraphQLIgnore]
     public int RequestNghiaHtid { get; set; }
 
     public int? MedicationCategoryQuanTnid { get; set; }
@@ -51,4 +52,9 @@ public partial class RequestNghiaHtsGraphQLResponse
 public partial class RequestNghiaHtGraphQLResponse
 {
     public RequestNghiaHt requestNghiaHt { get; set; }
+}
+
+public class CreateRequestNghiaHtResponse
+{
+    public int createRequestNghiaHt { get; set; }
 }

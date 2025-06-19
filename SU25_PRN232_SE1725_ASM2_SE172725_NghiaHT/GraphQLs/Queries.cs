@@ -49,4 +49,19 @@ public class Queries
 
         return new PaginationResult<List<RequestNghiaHt>>();
     }
+
+    [GraphQLName("medicationCategoryQuanTns")]
+    public async Task<List<MedicationCategoryQuanTn>> GetMedicationCategories()
+    {
+        try
+        {
+            var categories = await _serviceProvider.MedicationCategoryQuanTnService.GetAllAsync();
+            return categories;
+        }
+        catch (Exception ex)
+        {
+            // Log error if needed
+            return new List<MedicationCategoryQuanTn>();
+        }
+    }
 }

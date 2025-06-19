@@ -67,6 +67,10 @@
               "target": "Package",
               "version": "[6.1.0, )"
             },
+            "HotChocolate.Abstractions": {
+              "target": "Package",
+              "version": "[15.1.6, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.16, )"
@@ -167,6 +171,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "HotChocolate.Abstractions": {
+              "target": "Package",
+              "version": "[15.1.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"

@@ -89,4 +89,76 @@ public class GraphQLConsumer
             return new RequestNghiaHt();
         }
     }
+
+    public async Task<List<MedicationCategoryQuanTn>> GetMedicationCategories()
+    {
+        try
+        {
+            var query = @"query MedicationCategories {
+                            medicationCategoryQuanTns {
+                                medicationCategoryQuanTnid
+                                categoryName
+                            }
+                         }";
+
+            var response = await _graphQLClient.SendQueryAsync<MedicationCategoriesGraphQLResponse>(query);
+            if (response.Errors != null && response.Errors.Any())
+            {
+                Console.WriteLine("GraphQL Errors: " + string.Join(", ", response.Errors.Select(e => e.Message)));
+                return new List<MedicationCategoryQuanTn>();
+            }
+
+            var result = response?.Data?.medicationCategoryQuanTns ?? new List<MedicationCategoryQuanTn>();
+            return result;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in GetMedicationCategories: {ex.Message}");
+            return new List<MedicationCategoryQuanTn>();
+        }
+    }
+
+    public async Task<int> CreateRequestNghiaHt(RequestNghiaHt request)
+    {
+        try
+        {
+            var mutation = new GraphQLRequest
+            {
+                Query = @"mutation CreateRequestNghiaHt($requestNghiaHtInput: CreateRequestNghiaHtInput!) {
+                            createRequestNghiaHt(requestNghiaHtInput: $requestNghiaHtInput)
+                         }",
+                Variables = new
+                {
+                    requestNghiaHtInput = new
+                    {
+                        medicationName = request.MedicationName,
+                        dosage = request.Dosage,
+                        frequency = request.Frequency,
+                        reason = request.Reason,
+                        instruction = request.Instruction,
+                        quantity = request.Quantity,
+                        startDate = request.StartDate?.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+                        createdDate = request.CreatedDate?.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+                        isApproved = request.IsApproved,
+                        medicationCategoryQuanTnid = request.MedicationCategoryQuanTnid
+                    }
+                }
+            };
+
+            var response = await _graphQLClient.SendMutationAsync<CreateRequestNghiaHtResponse>(mutation);
+            if (response.Errors != null && response.Errors.Any())
+            {
+                Console.WriteLine("GraphQL Errors: " + string.Join(", ", response.Errors.Select(e => e.Message)));
+                return 0;
+            }
+
+            return response.Data.createRequestNghiaHt;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in CreateRequestNghiaHt: {ex.Message}");
+            return 0;
+        }
+    }
 }
+
