@@ -1,5 +1,95 @@
-﻿<h3>RequestNghiaHtDetail</h3>
+﻿@page "/RequestNghiaHts/Detail/{Id:int}"
+@using SMMS.GraphQLClients.BlazorWAS.NghiaHT.Models
+@inject SMMS.GraphQLClients.BlazorWAS.NghiaHT.GraphQLClients.GraphQLConsumer GraphQLConsumer
+@inject NavigationManager NavigationManager
+
+<h3>Request Nghia HT Detail</h3>
+
+@if (requestNghiaHt == null)
+{
+    <div>Loading...</div>
+}
+else
+{
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Request Details</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Medication Name</dt>
+                <dd class="col-sm-9">@requestNghiaHt.MedicationName</dd>
+
+                <dt class="col-sm-3">Dosage</dt>
+                <dd class="col-sm-9">@requestNghiaHt.Dosage</dd>
+
+                <dt class="col-sm-3">Frequency</dt>
+                <dd class="col-sm-9">@requestNghiaHt.Frequency</dd>
+
+                <dt class="col-sm-3">Reason</dt>
+                <dd class="col-sm-9">@requestNghiaHt.Reason</dd>
+
+                <dt class="col-sm-3">Instruction</dt>
+                <dd class="col-sm-9">@requestNghiaHt.Instruction</dd>
+
+                <dt class="col-sm-3">Quantity</dt>
+                <dd class="col-sm-9">@requestNghiaHt.Quantity</dd>                                       
+
+                <dt class="col-sm-3">Start Date</dt>
+                <dd class="col-sm-9">@requestNghiaHt.StartDate?.ToString("yyyy-MM-dd")</dd>
+
+                <dt class="col-sm-3">Created Date</dt>
+                <dd class="col-sm-9">@requestNghiaHt.CreatedDate?.ToString("yyyy-MM-dd")</dd>
+
+                <dt class="col-sm-3">Is Approved</dt>
+                <dd class="col-sm-9">@requestNghiaHt.IsApproved</dd>
+
+                <dt class="col-sm-3">Category Name</dt>
+                <dd class="col-sm-9">@requestNghiaHt.MedicationCategoryQuanTn?.CategoryName</dd>
+            </dl>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-danger" @onclick="DeleteRequest">Delete</button>
+            <a href="/RequestNghiaHts/RequestNghiaHtList" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+}
 
 @code {
+    [Parameter]
+    public int Id { get; set; }
 
+    private RequestNghiaHt requestNghiaHt;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            requestNghiaHt = await GraphQLConsumer.GetRequestNghiaHt(Id);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading request details: {ex.Message}");
+        }
+    }
+
+    private async Task DeleteRequest()
+    {
+        try
+        {
+            var success = await GraphQLConsumer.DeleteRequestNghiaHt(Id);
+            if (success)
+            {
+                NavigationManager.NavigateTo("/RequestNghiaHts/RequestNghiaHtList");
+            }
+            else
+            {
+                Console.WriteLine("Failed to delete request.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting request: {ex.Message}");
+        }
+    }
 }

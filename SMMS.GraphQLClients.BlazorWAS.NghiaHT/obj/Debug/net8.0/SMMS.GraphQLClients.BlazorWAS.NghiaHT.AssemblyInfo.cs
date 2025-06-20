@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SMMS.GraphQLClients.BlazorWAS.NghiaHT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ef8c12a553583452e523039d74758adcdce2cde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baa774b6ed338557d405412ffe43fb8b845eb2e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SMMS.GraphQLClients.BlazorWAS.NghiaHT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SMMS.GraphQLClients.BlazorWAS.NghiaHT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

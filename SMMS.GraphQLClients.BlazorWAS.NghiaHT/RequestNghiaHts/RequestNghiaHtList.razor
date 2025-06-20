@@ -41,15 +41,11 @@ else
                     <td>@requestNghiaHt.CreatedDate</td>
                     <td>@requestNghiaHt.StartDate</td>
                     <td>@requestNghiaHt.IsApproved</td>
-                    <td>@requestNghiaHt.MedicationCategoryQuanTn.CategoryName</td>                    
-                    
-                    @* <td class="text-center fw-bold text-success">@cashDepositSlip.AccountNoNavigation.BankNo</td>
-                    <td class="text-center fw-bold text-primary">@cashDepositSlip.CurrencyCode</td>
-                    <td class="text-end fw-bold text-danger">@cashDepositSlip.AmountInFigures.ToString("#,###")</td> *@
+                    <td>@requestNghiaHt.MedicationCategoryQuanTn.CategoryName</td>                                                            
                     
                     <td>
                         <div class="btn-group" role="group">
-                            <a href="#" class="btn btn-sm btn-primary">Detail</a>
+                            <NavLink href="@($"/RequestNghiaHts/Detail/{requestNghiaHt.RequestNghiaHtid}")" class="btn btn-sm btn-primary">Detail</NavLink>
                             <a href="#" class="btn btn-sm btn-warning">Edit</a>
                         </div>
                     </td>
@@ -69,9 +65,18 @@ else
         try
         {
             requestNghiaHt = await _graphQLConsumer.GetRequestNghiaHts();
+            foreach (var req in requestNghiaHt)
+            {
+                Console.WriteLine($"Request ID: {req.RequestNghiaHtid}, Medication: {req.MedicationName}");
+            }
+            if (requestNghiaHt == null || !requestNghiaHt.Any())
+            {
+                Console.WriteLine("No data returned from GetRequestNghiaHts.");
+            }
         }
         catch (Exception ex)
         {
+            Console.WriteLine($"Error loading requests: {ex.Message}");
         }
     }
 }

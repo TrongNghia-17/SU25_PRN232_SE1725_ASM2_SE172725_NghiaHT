@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SMMS.GraphQLClients.BlazorWAS.NghiaHT",
   "resources": {
-    "hash": "sha256-qTcG9AhruqvRLynAXcO5RtH4+U61tjR12jzNxASAexo=",
+    "hash": "sha256-jf2+ApRjM41p4tWd0TNzNw0N3sfhg01oyIOnEzoujnU=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-RiGT44TFZmHOY+Oqvb8o8r+BJVWex6+dPxFxrOiWvFY="
     },
@@ -255,11 +255,11 @@
       "netstandard.wasm": "sha256-PK0GLtj6kQVtZPzq0FZlnSdHh7geujg80LqKdJXA4pI=",
       "System.Private.CoreLib.wasm": "sha256-gEwccs7GbRSPGmeWBOKxNroYfyM+mZ7hqbP3ki1iwX0=",
       "SMMS.Repositories.NghiaHT.wasm": "sha256-QY8Z7z0Wg/lN4wsoG7NlPITW68G9GZsB5ngn00upRV0=",
-      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.wasm": "sha256-GJuz0jEisEZCcXgsAPF+qFQdBXC0m1ktMeoyxhS68oA="
+      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.wasm": "sha256-sypVzl51jkIiEZlustDeRLN/1uMAdcFpWaQgZemhWIM="
     },
     "pdb": {
       "SMMS.Repositories.NghiaHT.pdb": "sha256-LKma5JZkb0mGJMspAKC/UkQ5DPtPxTahxw15dYSNla4=",
-      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.pdb": "sha256-MEe82S4x2gl1Jdr6z8tuyfIduM4fCHJOzgA8wvK6buA="
+      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.pdb": "sha256-QHOvqEXYuh10vv4g5VCUbJ0/M06IbBpDF/R/i1aFPog="
     }
   },
   "cacheBootResources": true,

@@ -15,6 +15,7 @@ public class GraphQLConsumer
         {
             var query = @"query RequestNghiaHts {
                             requestNghiaHt{
+                              requestNghiaHtid
                               medicationName
                               dosage
                               frequency
@@ -80,7 +81,7 @@ public class GraphQLConsumer
 
 
             var response = await _graphQLClient.SendQueryAsync<RequestNghiaHtGraphQLResponse>(graphQLRequest);
-            var result = response?.Data?.requestNghiaHt;
+            var result = response?.Data?.requestNghiaHtById;
 
             return result;
         }
@@ -158,6 +159,34 @@ public class GraphQLConsumer
         {
             Console.WriteLine($"Error in CreateRequestNghiaHt: {ex.Message}");
             return 0;
+        }
+    }
+
+    public async Task<bool> DeleteRequestNghiaHt(int id)
+    {
+        try
+        {
+            var mutation = new GraphQLRequest
+            {
+                Query = @"mutation DeleteRequestNghiaHt($id: Int!) {
+                        deleteRequestNghiaHt(id: $id)
+                     }",
+                Variables = new { id = id }
+            };
+
+            var response = await _graphQLClient.SendMutationAsync<DeleteRequestNghiaHtResponse>(mutation);
+            if (response.Errors != null && response.Errors.Any())
+            {
+                Console.WriteLine("GraphQL Errors: " + string.Join(", ", response.Errors.Select(e => e.Message)));
+                return false;
+            }
+
+            return response.Data.deleteRequestNghiaHt;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in DeleteRequestNghiaHt: {ex.Message}");
+            return false;
         }
     }
 }

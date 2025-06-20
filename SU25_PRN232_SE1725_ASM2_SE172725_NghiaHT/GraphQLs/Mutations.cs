@@ -64,7 +64,7 @@ public class Mutations
         {
             var result = await _serviceProvider.RequestNghiaHtService.DeleteAsync(id);
 
-            return (bool)result;
+            return result;
         }
         catch (Exception ex)
         {

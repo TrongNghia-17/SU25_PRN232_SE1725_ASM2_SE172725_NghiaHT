@@ -51,10 +51,15 @@ public partial class RequestNghiaHtsGraphQLResponse
 
 public partial class RequestNghiaHtGraphQLResponse
 {
-    public RequestNghiaHt requestNghiaHt { get; set; }
+    public RequestNghiaHt requestNghiaHtById { get; set; }
 }
 
 public class CreateRequestNghiaHtResponse
 {
     public int createRequestNghiaHt { get; set; }
+}
+
+public class DeleteRequestNghiaHtResponse
+{
+    public bool deleteRequestNghiaHt { get; set; }
 }
