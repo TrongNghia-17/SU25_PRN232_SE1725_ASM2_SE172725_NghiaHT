@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SMMS.GraphQLClients.BlazorWAS.NghiaHT",
   "resources": {
-    "hash": "sha256-jf2+ApRjM41p4tWd0TNzNw0N3sfhg01oyIOnEzoujnU=",
+    "hash": "sha256-rXqjDnCVonKgwY/g1rLMgiO9Tuw5M03ynM4jabjaf4g=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-RiGT44TFZmHOY+Oqvb8o8r+BJVWex6+dPxFxrOiWvFY="
     },
@@ -254,12 +254,12 @@
       "mscorlib.wasm": "sha256-Im6xq+lOse4P/VnAyrA3hwPstV67V5dB0EwQWcjipyE=",
       "netstandard.wasm": "sha256-PK0GLtj6kQVtZPzq0FZlnSdHh7geujg80LqKdJXA4pI=",
       "System.Private.CoreLib.wasm": "sha256-gEwccs7GbRSPGmeWBOKxNroYfyM+mZ7hqbP3ki1iwX0=",
-      "SMMS.Repositories.NghiaHT.wasm": "sha256-QY8Z7z0Wg/lN4wsoG7NlPITW68G9GZsB5ngn00upRV0=",
-      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.wasm": "sha256-sypVzl51jkIiEZlustDeRLN/1uMAdcFpWaQgZemhWIM="
+      "SMMS.Repositories.NghiaHT.wasm": "sha256-mkcHMmN1G005Vy0iUxe+rAo22TRbTtzjxfdE2tC97oI=",
+      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.wasm": "sha256-y+5ECo/uyn89IgyzvP2BUb7LvbRxwisdB1niU0S+kr8="
     },
     "pdb": {
-      "SMMS.Repositories.NghiaHT.pdb": "sha256-LKma5JZkb0mGJMspAKC/UkQ5DPtPxTahxw15dYSNla4=",
-      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.pdb": "sha256-QHOvqEXYuh10vv4g5VCUbJ0/M06IbBpDF/R/i1aFPog="
+      "SMMS.Repositories.NghiaHT.pdb": "sha256-avQhIqX+SHVL4l6lBKPDd6YUxS1IyPF512BxPT+06hc=",
+      "SMMS.GraphQLClients.BlazorWAS.NghiaHT.pdb": "sha256-pGmQZaYsvVovp+JiLtxv9wdGRKJ1Goj0dThPZxhPkFw="
     }
   },
   "cacheBootResources": true,

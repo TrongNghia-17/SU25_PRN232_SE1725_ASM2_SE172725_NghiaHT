@@ -3,12 +3,17 @@
 @using SMMS.GraphQLClients.BlazorWAS.NghiaHT.Models
 
 <div class="mb-3">
-    <NavLink href="/RequestNghiaHts/Create" class="btn btn-success">Create New Request</NavLink>
+    <NavLink href="/RequestNghiaHts/Form" class="btn btn-success">Create New Request</NavLink>
 </div>
+
 
 @if (requestNghiaHt == null)
 {
     <div>Page loading...</div>
+}
+else if (!requestNghiaHt.Any())
+{
+    <div>No requests found.</div>
 }
 else
 {
@@ -41,12 +46,12 @@ else
                     <td>@requestNghiaHt.CreatedDate</td>
                     <td>@requestNghiaHt.StartDate</td>
                     <td>@requestNghiaHt.IsApproved</td>
-                    <td>@requestNghiaHt.MedicationCategoryQuanTn.CategoryName</td>                                                            
-                    
+                    <td>@(requestNghiaHt.MedicationCategoryQuanTn?.CategoryName ?? "N/A")</td>
+
                     <td>
                         <div class="btn-group" role="group">
                             <NavLink href="@($"/RequestNghiaHts/Detail/{requestNghiaHt.RequestNghiaHtid}")" class="btn btn-sm btn-primary">Detail</NavLink>
-                            <a href="#" class="btn btn-sm btn-warning">Edit</a>
+                            <NavLink href="@($"/RequestNghiaHts/Form/{requestNghiaHt.RequestNghiaHtid}")" class="btn btn-sm btn-warning">Edit</NavLink>
                         </div>
                     </td>
                 </tr>

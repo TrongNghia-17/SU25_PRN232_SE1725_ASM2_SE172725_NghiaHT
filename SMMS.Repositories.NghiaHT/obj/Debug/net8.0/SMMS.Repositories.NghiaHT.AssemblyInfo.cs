@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SMMS.Repositories.NghiaHT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ef8c12a553583452e523039d74758adcdce2cde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2a55fd0712b2cc0cfceeace38f29959efd2f846")]
 [assembly: System.Reflection.AssemblyProductAttribute("SMMS.Repositories.NghiaHT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SMMS.Repositories.NghiaHT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

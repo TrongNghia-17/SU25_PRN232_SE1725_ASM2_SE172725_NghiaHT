@@ -42,11 +42,11 @@ public class Mutations
         return 0;
     }
 
-    public async Task<int> UpdateRequestNghiaHt(RequestNghiaHt requestNghiaHt)
+    public async Task<int> UpdateRequestNghiaHt(RequestNghiaHt request)
     {
         try
-        {
-            var result = await _serviceProvider.RequestNghiaHtService.UpdateAsync(requestNghiaHt);
+        {          
+            var result = await _serviceProvider.RequestNghiaHtService.UpdateAsync(request);
 
             return (int)result;
         }

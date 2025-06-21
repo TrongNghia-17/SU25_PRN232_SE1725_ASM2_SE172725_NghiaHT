@@ -1,5 +1,142 @@
-﻿<h3>RequestNghiaHtForm</h3>
+﻿@page "/RequestNghiaHts/Form"
+@page "/RequestNghiaHts/Form/{Id:int?}"
+@using SMMS.GraphQLClients.BlazorWAS.NghiaHT.GraphQLClients
+@using SMMS.GraphQLClients.BlazorWAS.NghiaHT.Models
+@inject NavigationManager NavigationManager
+@inject GraphQLConsumer GraphQLConsumer
+
+<h3>@(Id.HasValue ? "Edit Request" : "Create New Request")</h3>
+
+@if (medicationCategories == null)
+{
+    <div>Loading categories...</div>
+}
+else
+{
+    <EditForm Model="@request" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <div class="mb-3">
+            <label for="medicationName" class="form-label">Medication Name</label>
+            <InputText id="medicationName" class="form-control" @bind-Value="request.MedicationName" />
+            <ValidationMessage For="@(() => request.MedicationName)" />
+        </div>
+        <div class="mb-3">
+            <label for="dosage" class="form-label">Dosage</label>
+            <InputText id="dosage" class="form-control" @bind-Value="request.Dosage" />
+            <ValidationMessage For="@(() => request.Dosage)" />
+        </div>
+        <div class="mb-3">
+            <label for="frequency" class="form-label">Frequency</label>
+            <InputText id="frequency" class="form-control" @bind-Value="request.Frequency" />
+            <ValidationMessage For="@(() => request.Frequency)" />
+        </div>
+        <div class="mb-3">
+            <label for="reason" class="form-label">Reason</label>
+            <InputText id="reason" class="form-control" @bind-Value="request.Reason" />
+            <ValidationMessage For="@(() => request.Reason)" />
+        </div>
+        <div class="mb-3">
+            <label for="instruction" class="form-label">Instruction</label>
+            <InputText id="instruction" class="form-control" @bind-Value="request.Instruction" />
+            <ValidationMessage For="@(() => request.Instruction)" />
+        </div>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <InputNumber id="quantity" class="form-control" @bind-Value="request.Quantity" />
+            <ValidationMessage For="@(() => request.Quantity)" />
+        </div>
+        <div class="mb-3">
+            <label for="startDate" class="form-label">Start Date</label>
+            <InputDate id="startDate" class="form-control" @bind-Value="request.StartDate" />
+            <ValidationMessage For="@(() => request.StartDate)" />
+        </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Medication Category</label>
+            <InputSelect id="category" class="form-control" @bind-Value="request.MedicationCategoryQuanTnid">
+                <option value="0" disabled selected="@(request.MedicationCategoryQuanTnid == 0)">Select a category</option>
+                @foreach (var category in medicationCategories)
+                {
+                    <option value="@category.MedicationCategoryQuanTnid">@category.CategoryName</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => request.MedicationCategoryQuanTnid)" />
+        </div>
+        <div class="mb-3">
+            <label for="isApproved" class="form-label">Is Approved</label>
+            <InputCheckbox id="isApproved" class="form-check-input" @bind-Value="request.IsApproved" />
+            <ValidationMessage For="@(() => request.IsApproved)" />
+        </div>
+        <button type="submit" class="btn btn-primary">@(Id.HasValue ? "Save" : "Create")</button>
+        <NavLink href="/RequestNghiaHts/RequestNghiaHtList" class="btn btn-secondary">Cancel</NavLink>
+    </EditForm>
+}
 
 @code {
+    [Parameter]
+    public int? Id { get; set; }
 
+    private RequestNghiaHt request = new RequestNghiaHt { CreatedDate = DateTime.Now };
+    private List<MedicationCategoryQuanTn> medicationCategories;
+    private string errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            medicationCategories = await GraphQLConsumer.GetMedicationCategories();
+            if (Id.HasValue)
+            {
+                request = await GraphQLConsumer.GetRequestNghiaHt(Id.Value) ?? new RequestNghiaHt { CreatedDate = DateTime.Now };
+                if (request.RequestNghiaHtid == 0)
+                {
+                    Console.WriteLine("Invalid request data, redirecting to list.");
+                    NavigationManager.NavigateTo("/RequestNghiaHts/RequestNghiaHtList");
+                }                
+            }
+        }
+        catch (Exception ex)
+        {
+            // Log error if needed
+            medicationCategories = new List<MedicationCategoryQuanTn>();
+        }
+    }
+
+    private async Task HandleSubmit()
+    {
+        try
+        {
+            if (Id.HasValue)
+            {
+                // Edit mode
+                var result = await GraphQLConsumer.UpdateRequestNghiaHt(request);
+                if (result > 0)
+                {
+                    Console.WriteLine("Update successful, navigating to detail.");
+                    NavigationManager.NavigateTo($"/RequestNghiaHts/Detail/{Id}");
+                }
+                else
+                {
+                    errorMessage = "Failed to update request.";
+                }
+            }
+            else
+            {
+                // Create mode
+                var result = await GraphQLConsumer.CreateRequestNghiaHt(request);
+                if (result > 0)
+                {
+                    NavigationManager.NavigateTo("/RequestNghiaHts/RequestNghiaHtList");
+                }
+                else
+                {
+                    errorMessage = "Failed to create request.";
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error creating request: {ex.Message}";
+            Console.WriteLine(errorMessage);
+        }
+    }
 }

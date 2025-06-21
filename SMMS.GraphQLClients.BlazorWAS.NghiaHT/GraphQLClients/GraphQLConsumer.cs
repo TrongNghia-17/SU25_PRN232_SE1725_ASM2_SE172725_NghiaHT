@@ -69,6 +69,7 @@ public class GraphQLConsumer
                           startDate
                           createdDate
                           isApproved
+                          medicationCategoryQuanTnid
                           medicationCategoryQuanTn {
                             categoryName
                           }
@@ -187,6 +188,50 @@ public class GraphQLConsumer
         {
             Console.WriteLine($"Error in DeleteRequestNghiaHt: {ex.Message}");
             return false;
+        }
+    }
+
+    public async Task<int> UpdateRequestNghiaHt(RequestNghiaHt request)
+    {
+        try
+        {
+            var mutation = new GraphQLRequest
+            {
+                Query = @"mutation UpdateRequestNghiaHt($request: RequestNghiaHtInput!) {
+                            updateRequestNghiaHt(request: $request)
+                         }",
+                Variables = new
+                {
+                    request = new
+                    {
+                        requestNghiaHtid = request.RequestNghiaHtid,
+                        medicationName = request.MedicationName,
+                        dosage = request.Dosage,
+                        frequency = request.Frequency,
+                        reason = request.Reason,
+                        instruction = request.Instruction,
+                        quantity = request.Quantity,
+                        startDate = request.StartDate?.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+                        createdDate = request.CreatedDate?.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+                        isApproved = request.IsApproved,
+                        medicationCategoryQuanTnid = request.MedicationCategoryQuanTnid
+                    }
+                }
+            };
+
+            var response = await _graphQLClient.SendMutationAsync<UpdateRequestNghiaHtResponse>(mutation);
+            if (response.Errors != null && response.Errors.Any())
+            {
+                Console.WriteLine("GraphQL Errors: " + string.Join(", ", response.Errors.Select(e => e.Message)));
+                return 0;
+            }
+
+            return response.Data.updateRequestNghiaHt;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in UpdateRequestNghiaHt: {ex.Message}");
+            return 0;
         }
     }
 }

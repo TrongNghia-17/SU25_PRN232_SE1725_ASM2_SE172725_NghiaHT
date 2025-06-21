@@ -1262,8 +1262,8 @@ D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS
 D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\00jz5usczc-kc01jjtg0z.gz
 D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\z5oltkbheh-zaqbhqcj2a.gz
 D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\8261nkcx4c-jd5clpssx5.gz
-D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\ltd152wgth-14vnm7ofzi.gz
-D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\jspykac662-w9zheb7lo8.gz
-D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\ytty64l070-zo38uu5kbz.gz
-D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\tpj94wbgju-4rvakoo1w4.gz
-D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\voa0s5i3ts-w09ojalo61.gz
+D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\ltd152wgth-2m0u124buv.gz
+D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\jspykac662-qcmhtfllvq.gz
+D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\ytty64l070-3mn11cngod.gz
+D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\tpj94wbgju-obw41zmucn.gz
+D:\PRN232\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\SMMS.GraphQLClients.BlazorWAS.NghiaHT\obj\Debug\net8.0\compressed\voa0s5i3ts-29aj0g2ovj.gz

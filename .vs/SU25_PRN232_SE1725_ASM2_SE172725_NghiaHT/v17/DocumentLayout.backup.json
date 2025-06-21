@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|solutionrelative:smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|solutionrelative:smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\smms.graphqlclients.blazorwas.nghiaht\\graphqlclients\\graphqlconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|solutionrelative:smms.graphqlclients.blazorwas.nghiaht\\graphqlclients\\graphqlconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,28 +19,8 @@
       "RelativeMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|solutionrelative:smms.graphqlclients.blazorwas.nghiaht\\models\\requestnghiaht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|solutionrelative:smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|solutionrelative:smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0704F81C-3A6C-46BB-8486-324DF0AC34BD}|SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLAPIServices.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\su25_prn232_se1725_asm2_se172725_nghiaht\\graphqls\\mutations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0704F81C-3A6C-46BB-8486-324DF0AC34BD}|SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLAPIServices.NghiaHT.csproj|solutionrelative:su25_prn232_se1725_asm2_se172725_nghiaht\\graphqls\\mutations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtcreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F96390B-C511-492B-AD7F-DF230C22E203}|SMMS.GraphQLClients.BlazorWAS.NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT.csproj|solutionrelative:smms.graphqlclients.blazorwas.nghiaht\\requestnghiahts\\requestnghiahtcreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D223638-69D3-4E9A-B753-5716B8FC2949}|SMMS.Repositories.NghiaHT\\SMMS.Repositories.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\smms.repositories.nghiaht\\models\\requestnghiaht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D223638-69D3-4E9A-B753-5716B8FC2949}|SMMS.Repositories.NghiaHT\\SMMS.Repositories.NghiaHT.csproj|solutionrelative:smms.repositories.nghiaht\\models\\requestnghiaht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0704F81C-3A6C-46BB-8486-324DF0AC34BD}|SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLAPIServices.NghiaHT.csproj|d:\\prn232\\su25_prn232_se1725_asm2_se172725_nghiaht\\su25_prn232_se1725_asm2_se172725_nghiaht\\graphqls\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0704F81C-3A6C-46BB-8486-324DF0AC34BD}|SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLAPIServices.NghiaHT.csproj|solutionrelative:su25_prn232_se1725_asm2_se172725_nghiaht\\graphqls\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,66 +38,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RequestNghiaHt.cs",
-              "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "RelativeDocumentMoniker": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "RelativeToolTip": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAiwDUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T15:07:04.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RequestNghiaHtDetail.razor",
               "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtDetail.razor",
               "RelativeDocumentMoniker": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtDetail.razor",
               "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtDetail.razor",
               "RelativeToolTip": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtDetail.razor",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-20T14:59:45.625Z",
+              "WhenOpened": "2025-06-21T06:39:30.664Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RequestNghiaHtList.razor",
-              "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtList.razor",
-              "RelativeDocumentMoniker": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtList.razor",
-              "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtList.razor",
-              "RelativeToolTip": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtList.razor",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-20T14:25:29.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Queries.cs",
-              "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\GraphQLs\\Queries.cs",
-              "RelativeDocumentMoniker": "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\GraphQLs\\Queries.cs",
-              "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\GraphQLs\\Queries.cs",
-              "RelativeToolTip": "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\GraphQLs\\Queries.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAMwDgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:44:47.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RequestNghiaHt.cs",
-              "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.Repositories.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "RelativeDocumentMoniker": "SMMS.Repositories.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.Repositories.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "RelativeToolTip": "SMMS.Repositories.NghiaHT\\Models\\RequestNghiaHt.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:37:20.869Z"
             },
             {
               "$type": "Document",
@@ -119,35 +57,48 @@
               "RelativeDocumentMoniker": "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\GraphQLs\\Mutations.cs",
               "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\GraphQLs\\Mutations.cs",
               "RelativeToolTip": "SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\GraphQLs\\Mutations.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAD4vy0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T11:16:32.007Z",
+              "WhenOpened": "2025-06-21T03:19:11.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "RequestNghiaHtForm.razor",
+              "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtForm.razor",
+              "RelativeDocumentMoniker": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtForm.razor",
+              "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtForm.razor",
+              "RelativeToolTip": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtForm.razor",
+              "ViewState": "AgIAAGIAAAAAAAAAAAApwDUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T03:03:25.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestNghiaHt.cs",
+              "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
+              "RelativeDocumentMoniker": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
+              "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
+              "RelativeToolTip": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\Models\\RequestNghiaHt.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvw8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T02:09:16.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GraphQLConsumer.cs",
               "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\GraphQLClients\\GraphQLConsumer.cs",
               "RelativeDocumentMoniker": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\GraphQLClients\\GraphQLConsumer.cs",
               "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\GraphQLClients\\GraphQLConsumer.cs",
               "RelativeToolTip": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\GraphQLClients\\GraphQLConsumer.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAUwFMAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAiwDMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T11:11:25.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RequestNghiaHtCreate.razor",
-              "DocumentMoniker": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtCreate.razor",
-              "RelativeDocumentMoniker": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtCreate.razor",
-              "ToolTip": "D:\\PRN232\\SU25_PRN232_SE1725_ASM2_SE172725_NghiaHT\\SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtCreate.razor",
-              "RelativeToolTip": "SMMS.GraphQLClients.BlazorWAS.NghiaHT\\RequestNghiaHts\\RequestNghiaHtCreate.razor",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T11:00:51.329Z",
               "EditorCaption": ""
             }
           ]
